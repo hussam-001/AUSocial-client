@@ -105,7 +105,9 @@
     "WELCOME_BACK": "tekrar hoşgeldiniz",
     "YES": "Evet",
     "YOU": "Sen",
-    "YOUR_REPLY": "Cevabınızı"
+    "YOUR_REPLY": "Cevabınızı",
+    "USERS": "Kullanıcılar",
+    "DISMISS": "Azletmek"
   },
   "RESET_PASSWORD": {
     "AN_EMAIL_IS_NOW_WINGING_ITS_WAY_TO_YOU": "Phew, şimdi yeni bir şifrenin nasıl alınacağına dair talimatlar içeren bir e-posta size doğru geliyor.",

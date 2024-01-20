@@ -105,7 +105,9 @@
     "SUGGESTED_FRIENDS": "Suggested Friends",
     "HOME_PAGE": "Home Page",
     "FEED": "Feed",
-    "MENU": "Menu"
+    "MENU": "Menu",
+    "USERS": "Users",
+    "DISMISS": "Dismiss"
   },
   "RESET_PASSWORD": {
     "RESET_YOUR_PASSWORD": "Reset your password",
