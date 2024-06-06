@@ -2,4 +2,4 @@
 
 then
 
-### `yarn preview`
+### `yarn dev`

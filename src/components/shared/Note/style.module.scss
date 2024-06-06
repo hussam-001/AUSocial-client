@@ -1,0 +1,31 @@
+.note {
+  --background: rgba(var(--ion-color-base-rgb), 0.08) !important;
+  --color: var(--ion-color-shade) !important;
+  --border-style: none;
+  --border-radius: var(--bk-border-radius);
+
+  &.primary {
+    --ion-color-base-rgb: var(--ion-color-primary-rgb);
+    --ion-color-shade: var(--ion-color-primary-shade);
+  }
+  &.secondary {
+    --ion-color-base-rgb: var(--ion-color-secondary-rgb);
+    --ion-color-shade: var(--ion-color-secondary-shade);
+  }
+  &.tertiary {
+    --ion-color-base-rgb: var(--ion-color-tertiary-rgb);
+    --ion-color-shade: var(--ion-color-tertiary-shade);
+  }
+  &.warning {
+    --ion-color-base-rgb: var(--ion-color-warning-rgb);
+    --ion-color-shade: var(--ion-color-warning-shade);
+  }
+  &.success {
+    --ion-color-base-rgb: var(--ion-color-success-rgb);
+    --ion-color-shade: var(--ion-color-success-shade);
+  }
+  &.danger {
+    --ion-color-base-rgb: var(--ion-color-danger-rgb);
+    --ion-color-shade: var(--ion-color-danger-shade);
+  }
+}

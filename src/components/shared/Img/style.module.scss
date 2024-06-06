@@ -1,0 +1,5 @@
+.ionImage {
+  &::part(image) {
+    border-radius: inherit;
+  }
+}

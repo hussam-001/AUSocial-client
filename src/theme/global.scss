@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  hr {
+    background-color: gray;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .body1-text {
+    font-size: 16px;
+  }
+  .body2-text {
+    font-size: 14px;
+  }
+
+  ion-toolbar {
+    --background: var(--ion-color-light);
+  }
+
+  ion-card {
+    --background: var(--ion-color-light);
+    border-radius: 16px;
+  }
+
+  ion-modal {
+    --border-radius: 16px;
+  }
+
+  ion-item {
+    --background: var(--ion-color-light);
+  }
+
+  .w-md-editor {
+    --md-editor-background-color: transparent;
+  }
+  .wmde-markdown {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,12 @@
+.iconButton {
+  //   margin: 0;
+  ion-button {
+    &:global(.button-has-icon-only.button-clear),
+    &:global(.button-has-icon-only) {
+      --padding-top: var(--bk-icon-button-padding);
+      --padding-end: var(--bk-icon-button-padding);
+      --padding-bottom: var(--bk-icon-button-padding);
+      --padding-start: var(--bk-icon-button-padding);
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.checkbox {
+  ion-label {
+    white-space: normal !important;
+  }
+}
+
+.searchAutocomplete {
+  ion-searchbar {
+    --box-shadow: none;
+    --background: transparent;
+    padding: 0;
+  }
+  &::part(native) {
+    padding-inline-start: 0;
+  }
+}
+
+.dropzone {
+  border-radius: var(--ion-border-radius);
+  border: 1px dashed #ff385c;
+  background-color: #fff1f4;
+  text-align: center;
+  margin: 12px;
+  outline: #fff1f4 solid 12px;
+  padding: 8px;
+  height: 100%;
+
+  .imgBorder {
+    cursor: pointer;
+    border-radius: var(--ion-border-radius);
+    border: 1px dashed #ff385c;
+    background-color: #fff;
+    position: relative;
+    width: 64px;
+    height: 64px;
+
+    .closeButton {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.dateTimeModal {
+  color: #000;
+}
+
+.filePickerInput {
+  .inputCircle {
+    cursor: pointer;
+    background-color: #ffeaec;
+    color: #ff9aac;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .inputCircleError {
+    border: 1px solid var(--ion-color-danger);
+  }
+
+  ion-note {
+    font-size: 12px;
+
+    p {
+      margin-top: -10px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .fileInputWrapper {
+    line-break: anywhere;
+    font-size: 12px;
+    padding: 15px;
+  }
+}
+
+.dateContainer {
+  ion-datetime-button::part(native) {
+    min-height: 50px;
+    background-color: white !important;
+    border: 1px solid #dcdbdb;
+    border-radius: 4px;
+  }
+}
+
+.textAreaLabel {
+  margin: 0 0 8px 4px;
+  font-size: 22px;
+}
+.textAreaWarning {
+  --background: #fff4d9;
+  --background-focused: #fff4d9;
+  --background-activated: #fff4d9;
+  --background-hover: #fff4d9;
+  --color: #555042;
+  --border-width: 0px;
+}
+
+.wrapper {
+  ion-radio::part(container) {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 25px;
+  }
+}
+
+.fixedOutsideLabel {
+  width: 200px;
+  text-align: end;
+}
+
+.fixedOutsideTextField {
+  flex-grow: 1;
+  padding-inline-start: 20px;
+}
+
+.description {
+  padding-inline-start: 20px;
+}
+
+.dateLabel {
+  margin-right: 8px;
+}
+
+.textField {
+  ion-item {
+    width: 100%;
+  }
+}
+
+.labelOutline {
+  margin-bottom: 16px !important;
+}
+
+.label {
+  margin-bottom: 8px !important;
+}
+
+.innerSelect {
+  width: 100%;
+}
+
+:global(.mobile) {
+  .fixedOutsideTextFieldDate {
+    max-width: 40%;
+    padding-inline-start: 0px;
+  }
+
+  .fixedOutsideLabel {
+    text-align: start;
+    margin-bottom: 8px;
+  }
+
+  .fixedOutsideTextField {
+    padding-inline-start: 0;
+  }
+  .fixedOutsideSelectField {
+    padding-inline-start: 0;
+  }
+
+  .description {
+    padding-inline-start: 0px;
+  }
+
+  .radioListHeader {
+    ion-text {
+      h6 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .radioWrapper {
+    ion-label {
+      font-size: 14px;
+    }
+  }
+
+  .checkbox {
+    ion-label {
+      font-size: 15px;
+    }
+  }
+
+  .textField {
+    ion-label {
+      margin: 0 !important;
+    }
+  }
+
+  .select {
+    ion-label {
+      margin: 0 !important;
+    }
+  }
+}
+
+.dateTimeBtn {
+  display: block;
+}
+
+:global(.web) {
+  .select {
+    .labelOutline {
+      margin-bottom: 16px !important;
+    }
+
+    .label {
+      margin-bottom: 8px !important;
+    }
+  }
+}

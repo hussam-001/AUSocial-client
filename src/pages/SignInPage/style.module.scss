@@ -1,0 +1,12 @@
+.lineOnTextSides {
+  width: 100%;
+  text-align: center;
+  color: var(--ion-color-medium);
+  border-bottom: 1px solid var(--bk-border-color);
+  line-height: 0.1em;
+  margin: 16px 0;
+  span {
+    background: #fff;
+    padding: 0 12px;
+  }
+}
