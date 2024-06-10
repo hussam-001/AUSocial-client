@@ -9,9 +9,11 @@
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
+    "build:android": "tsc && vite build && npx cap sync android && npx cap open android",
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/android": "^5.0.6",
     "@capacitor/app": "5.0.6",
     "@capacitor/camera": "^5.0.7",
     "@capacitor/core": "5.5.1",

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ausocial</string>
+    <string name="title_activity_main">ausocial</string>
+    <string name="package_name">com.uni.ausocial</string>
+    <string name="custom_url_scheme">com.uni.ausocial</string>
+</resources>
