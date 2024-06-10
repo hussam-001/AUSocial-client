@@ -22,28 +22,36 @@ const HomePage = ({}: RouteComponentProps) => {
   return (
     <IonPage>
       <IonContent>
-        <IonTabs>
-          <IonRouterOutlet>
-            <Redirect exact path="/home" to="/home/feed" />
-            <Route exact path="/home/feed" render={() => <FeedPage />} />
-            <Route exact path="/home/explore" render={() => <ExplorePage />} />
-            <Route exact path="/home/menu" render={() => <MenuPage />} />
-          </IonRouterOutlet>
-          <IonTabBar slot="bottom">
-            <IonTabButton tab="feed" href="/home/feed">
-              <IonIcon icon={home} />
-              <IonLabel>{t("COMMON.HOME")}</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="explore" href="/home/explore">
-              <IonIcon icon={search} />
-              <IonLabel>{t("COMMON.EXPLORE")}</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="menu" href="/home/menu">
-              <IonIcon icon={menu} />
-              <IonLabel>{t("COMMON.MENU")}</IonLabel>
-            </IonTabButton>
-          </IonTabBar>
-        </IonTabs>
+        <IonRouterOutlet>
+          <IonContent>
+            <IonTabs>
+              <IonRouterOutlet>
+                <Redirect exact path="/home" to="/home/feed" />
+                <Route exact path="/home/feed" render={() => <FeedPage />} />
+                <Route
+                  exact
+                  path="/home/explore"
+                  render={() => <ExplorePage />}
+                />
+                <Route exact path="/home/menu" render={() => <MenuPage />} />
+              </IonRouterOutlet>
+              <IonTabBar slot="bottom">
+                <IonTabButton tab="feed" href="/home/feed">
+                  <IonIcon icon={home} />
+                  <IonLabel>{t("COMMON.HOME")}</IonLabel>
+                </IonTabButton>
+                <IonTabButton tab="explore" href="/home/explore">
+                  <IonIcon icon={search} />
+                  <IonLabel>{t("COMMON.EXPLORE")}</IonLabel>
+                </IonTabButton>
+                <IonTabButton tab="menu" href="/home/menu">
+                  <IonIcon icon={menu} />
+                  <IonLabel>{t("COMMON.MENU")}</IonLabel>
+                </IonTabButton>
+              </IonTabBar>
+            </IonTabs>
+          </IonContent>
+        </IonRouterOutlet>
       </IonContent>
     </IonPage>
   );

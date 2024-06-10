@@ -1,11 +1,11 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 import { authInstance } from "@/config/axios";
-import { useParams } from "react-router";
+import { useLocation } from "@/overrides/react-router";
 
 export const useGetUser = (prop?: string) => {
-  const params = useParams<{ username: string }>();
-  const username = prop ?? params.username;
+  const { searchParams } = useLocation();
+  const username = prop ?? searchParams.username;
   return useQuery({
     queryKey: ["users", username],
     queryFn: async () => {

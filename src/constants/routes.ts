@@ -13,7 +13,8 @@ export const PAGES = {
     authGuard: true,
   },
   USER_PAGE: {
-    path: (username: string) => `/user/${username ?? ":username"}`,
+    path: (username: string) =>
+      `/user${username ? `?username=${username}` : ""}`,
     component: UserPage,
     authGuard: true,
   },

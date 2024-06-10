@@ -10,6 +10,7 @@ export default defineConfig({
   },
   build: {
     outDir: "build",
+    emptyOutDir: true,
   },
   test: {
     globals: true,
