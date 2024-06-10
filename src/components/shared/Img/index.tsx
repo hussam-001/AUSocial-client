@@ -1,6 +1,7 @@
 import { IonImg } from "@/overrides/ionic/react";
 import style from "./style.module.scss";
 import { backendApiUrl } from "@/constants";
+import { getBackendUrl } from "@/config";
 
 type Format = "thumbnail" | "small" | "medium" | "large";
 
@@ -11,12 +12,13 @@ type ImgProps = React.ComponentProps<typeof IonImg> & {
 const avatarPlaceholder = "/assets/svg/avatar-placeholder.svg";
 
 function getFormat(src: any, format?: Format) {
+  const backendUrl = getBackendUrl();
   const url =
     typeof src === "string"
       ? src
       : (format ? (src?.formats && src?.formats[format]) ?? src : src)?.url;
   if (!url) return avatarPlaceholder;
-  return url.startsWith("/") ? import.meta.env.VITE_BACKEND_URL + url : url;
+  return url.startsWith("/") ? backendUrl + url : url;
 }
 
 export default function Img({

@@ -1,1 +1,3 @@
-export const backendApiUrl = import.meta.env.VITE_BACKEND_URL + "/api";
+import { getBackendUrl } from "@/config";
+
+export const backendApiUrl = getBackendUrl() + "/api";

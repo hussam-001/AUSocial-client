@@ -23,9 +23,14 @@ import FormField from "@/components/shared/Form/FormField";
 import TForm from "@/components/shared/Form";
 import { PAGES } from "@/constants/routes";
 import { useSignIn } from "@/api";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 const SignInPage = ({ location: { search } }: RouteComponentProps) => {
   const { t } = useTranslation();
+  const [apiUrl, setApiUrl] = useLocalStorage(
+    "backendIp",
+    import.meta.env.VITE_BACKEND_URL.split("//")[1].split(":")[0],
+  );
   const methods = useForm();
   const signIn = useSignIn();
 
@@ -105,6 +110,16 @@ const SignInPage = ({ location: { search } }: RouteComponentProps) => {
                       </IonCol>
                     </IonRow>
                   </IonCardContent>
+                  <input
+                    className="ion-text-center mx-auto"
+                    style={{
+                      display: "block",
+                    }}
+                    value={apiUrl}
+                    onChange={(e) => {
+                      setApiUrl(e.target.value);
+                    }}
+                  />
                 </IonCard>
               </TForm>
             </IonCol>
